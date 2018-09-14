@@ -192,7 +192,7 @@ const createPuzzle = (width, height, languageCode, words) => {
   return grid
 }
 
-export {
+module.exports = {
   createPuzzle, 
   printGrid, 
   initializeGrid, 
