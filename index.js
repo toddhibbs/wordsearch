@@ -15,16 +15,18 @@ const LANGUAGES = {
   'en': 'abcdefghijklmnopqrstuvwxyz'.split('').map(letter => letter.toUpperCase()),
   'es': 'abcdefghijklmnñopqrstuvwxyz'.split('').map(letter => letter.toUpperCase())
 }
-// const ENGLISH_LETTERS = 'abcdefghijklmnopqrstuvwxyz'.split('').map(letter => letter.toUpperCase())
 
 const printGrid = (grid, space) => {
+  let lines = []
   _.each(grid, row => {
     let r = row.join(' ')
     if (space) {
       r = r.replace(/0/gi, ' ')
     }
-    console.log(r)
+    //console.log(r)
+    lines.push(r)
   })
+  return lines
 }
 const initializeGrid = (width, height) => {
   let grid = []
@@ -213,5 +215,6 @@ module.exports = {
   getRandomDirection,
   canPlaceWord,
   placeWord,
-  placeWordRandom
+  placeWordRandom,
+  LANGUAGES
 }
