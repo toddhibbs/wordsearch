@@ -23,7 +23,6 @@ const printGrid = (grid, space) => {
     if (space) {
       r = r.replace(/0/gi, ' ')
     }
-    //console.log(r)
     lines.push(r)
   })
   return lines

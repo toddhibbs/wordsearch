@@ -274,4 +274,12 @@ describe('wordsearch generator helpers', function() {
     expect(zeroCount).to.equal(0)
   })
 
+  it('should return an array of strings ready for printing', function() {
+    let grid = wordsearch.createPuzzle(20, 20, 'en', words)
+    let rows = wordsearch.printGrid(grid, true)
+    rows.forEach(function(r) {
+      console.log(r)
+    })
+  })
+
 });
