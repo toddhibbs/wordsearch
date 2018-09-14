@@ -2,7 +2,7 @@
   "name": "wordsearch-generator",
   "version": "1.1.0",
   "description": "Module for creating wordsearch puzzles",
-  "main": "index.js",
+  "main": "bin/index.js",
   "scripts": {
     "build": "babel --presets es2015 index.js --out-dir bin",
     "test": "npm run build && mocha --reporter spec"
@@ -16,6 +16,11 @@
   "engines": {
     "node": ">=4.8.3"
   },
+  "keywords": [
+    "wordsearch",
+    "word search",
+    "puzzle"
+  ],
   "dependencies": {
     "lodash": "^4.17.10"
   },
